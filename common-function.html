@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Common Function</title>
+    <style>
+        .box{
+            border: 2px solid greenyellow;
+            width: 300px;
+            height: 150px;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a Use Case of common Function</h1>
+    <button id="btn1" onclick="test1()">button1</button>
+    <button id="btn2" onclick="test2()">button2</button>
+    <button id="btn3" onclick="test3()">button3</button>
+
+    <p id="paragraph1"></p>
+    <p id="paragraph2"></p>
+    <p id="paragraph3"></p>
+
+    <input id="input-field" type="text">
+
+    <div class="box" id="box">
+        <h1>Hey how are ya doin</h1>
+        <p id="info">doing great</p>
+        <input type="text" name="" id="tap-field">
+        <button onclick="handleClick(this)">tap</button>
+    </div>
+
+    <script src="./common-function.js"></script>
+    <script src="./parent-child.js"></script>
+    <script>
+        const aa = document.getElementById('box').children;
+        for(let i of aa){
+            console.log(i.innerText);
+        }
+        console.log(aa);
+    </script>
+</body>
+</html>
